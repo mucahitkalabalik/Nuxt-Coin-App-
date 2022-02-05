@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    list-style: none;
+}
+
+@media (max-width:900px) {
+    .home{
+        font-size: 13px;
+    }
+}
+@media (max-width:1200px) {
+    .img-btc{
+        width: 100px !important;
+        height: 100px !important;
+    }
+    .img-eth{
+        width: 100px !important;
+        height: 100px !important;
+    }
+}
+section{
+    min-height: calc(100vh - 30px);
+    scroll-margin-top: 45px;
+    padding-bottom: 2rem;
+}
