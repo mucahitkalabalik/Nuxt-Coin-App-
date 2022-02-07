@@ -70,7 +70,7 @@ export default {};
 }   
 
 .twitter:hover    {
-     background-color: rgba(72, 154, 160, 0.782);
+     background-color: rgba(60, 174, 182, 0.782);
     border-radius: 45%;
 }   
 

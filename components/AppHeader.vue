@@ -39,7 +39,7 @@ export default {};
   box-shadow: 5px 5px 100px black;
   position: sticky;
   top: 0;
-  background-image: linear-gradient(to left, rgb(177, 80, 80), rgb(0, 0, 0));
+  background-image: linear-gradient(to right, rgb(177, 80, 80), rgb(0, 0, 0));
   z-index: 3;
 }
 nav ul {

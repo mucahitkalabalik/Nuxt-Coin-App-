@@ -6,7 +6,7 @@
     <v-container class="check-input elevation-10">
       <div class="card-container">
         <div class="coin-input">
-          <v-text-field color="black" label="Coin name" v-model="coinname">
+          <v-text-field color="black" label="Coin name" v-model="coinname" @keyup.enter="getChangeCoin">
           </v-text-field>
           <v-btn class="get-btn" @click="getChangeCoin">Get Coin Info</v-btn>
         </div>
@@ -69,6 +69,7 @@ export default {
         `https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&ids=shiba-inu&order=market_cap_desc&per_page=1&page=1&sparkline=false%27`
       );
       const coins = await data;
+      console.log(coins)
       this.coin = coins.data[0];
     },
     async getChangeCoin() {
@@ -90,7 +91,7 @@ export default {
 
 <style scoped>
 #home {
-  background-image: linear-gradient(to right, rgb(177, 80, 80), rgb(0, 0, 0));
+  background-image: linear-gradient(to right, rgba(179, 56, 56, 0.904), rgb(0, 0, 0));
   width: 100%;
 }
 .home {
@@ -240,5 +241,6 @@ h3 {
   .info-image{
     max-width: 11rem;
   }
+ 
 }
 </style>

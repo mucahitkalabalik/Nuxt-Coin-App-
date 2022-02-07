@@ -8,6 +8,7 @@
       loading="true"
       align="center"
       
+      
     >
       <template v-slot:item.image="{ item }">
         <img
@@ -63,22 +64,17 @@ export default {
 
 <style scoped>
 #coins {
-  background-image: linear-gradient(to right, rgb(177, 80, 80), rgb(0, 0, 0));
+  background-image: linear-gradient(to right, rgba(179, 56, 56, 0.904), rgb(0, 0, 0));
   padding-top: 50px;
 
 }
-
 .theme--light.v-data-table {
-  background-color: #ffffff29;
+  background-color: #c28a8a8a;
   color: rgba(0, 0, 0, 0.87);
 }
-.theme--light.v-data-table > .v-data-table__wrapper > table > tbody > tr:hover:not(.v-data-table__expanded__content):not(.v-data-table__empty-wrapper) {
-    background: #eeeeee30;
-}
-
 @media (max-width:555) {
-  .v-application .pl-10 {
-    padding-left: 0 !important; 
+   .v-application .pl-10 {
+    padding-left: 0 !important;
 }
 }
 </style>
